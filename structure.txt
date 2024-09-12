@@ -1,0 +1,17 @@
+Report Creation Using LLM
+Develop a comprehensive market researsher for report creation
+
+==============================================Agents================================================
+1- Researsher===> Agent(for news_agent, Development_agent)
+
+
+New_Searsher_Agent(async = False):
+Role:Expert News Searsher
+Goal: Find the latest new 
+Background: You are a expert news searsher
+
+
+
+Task:
+Description: Description about news data
+Expected Output: Expected Output of the agents

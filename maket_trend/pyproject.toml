@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "maket_trend"
+version = "0.1.0"
+description = "maket_trend using crewAI"
+authors = ["Your Name <you@example.com>"]
+
+[tool.poetry.dependencies]
+python = ">=3.10,<=3.13"
+crewai = { extras = ["tools"], version = ">=0.55.2,<1.0.0" }
+
+
+[tool.poetry.scripts]
+maket_trend = "maket_trend.main:run"
+run_crew = "maket_trend.main:run"
+train = "maket_trend.main:train"
+replay = "maket_trend.main:replay"
+test = "maket_trend.main:test"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 import sys
-from market_report_generation.crew import MarketReportGenerationCrew
+from maket_trend.crew import MaketTrendCrew
 
 # This main file is intended to be a way for your to run your
 # crew locally, so refrain from adding necessary logic into this file.
@@ -12,9 +12,9 @@ def run():
     Run the crew.
     """
     inputs = {
-        'topic': 'AI LLMs'
+        'topic': input('Enter the research topic: ')
     }
-    MarketReportGenerationCrew().crew().kickoff(inputs=inputs)
+    MaketTrendCrew().crew().kickoff(inputs=inputs)
 
 
 def train():
@@ -25,7 +25,7 @@ def train():
         "topic": "AI LLMs"
     }
     try:
-        MarketReportGenerationCrew().crew().train(n_iterations=int(sys.argv[1]), filename=sys.argv[2], inputs=inputs)
+        MaketTrendCrew().crew().train(n_iterations=int(sys.argv[1]), filename=sys.argv[2], inputs=inputs)
 
     except Exception as e:
         raise Exception(f"An error occurred while training the crew: {e}")
@@ -35,7 +35,7 @@ def replay():
     Replay the crew execution from a specific task.
     """
     try:
-        MarketReportGenerationCrew().crew().replay(task_id=sys.argv[1])
+        MaketTrendCrew().crew().replay(task_id=sys.argv[1])
 
     except Exception as e:
         raise Exception(f"An error occurred while replaying the crew: {e}")
@@ -48,7 +48,7 @@ def test():
         "topic": "AI LLMs"
     }
     try:
-        MarketReportGenerationCrew().crew().test(n_iterations=int(sys.argv[1]), openai_model_name=sys.argv[2], inputs=inputs)
+        MaketTrendCrew().crew().test(n_iterations=int(sys.argv[1]), openai_model_name=sys.argv[2], inputs=inputs)
 
     except Exception as e:
         raise Exception(f"An error occurred while replaying the crew: {e}")

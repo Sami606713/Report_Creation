@@ -1,0 +1,61 @@
+research_task:
+  description: >
+    Conduct comprehensive research on {topic}, focusing on key trends, innovations, and developments in the year 2024. 
+    The research should gather cutting-edge, recent information that will aid in strategic decision-making related to {topic}.
+  expected_output: >
+    A structured research report containing the following sections:
+    1. **Executive Summary**: 
+       - A brief overview of the key findings and insights related to {topic} in 2024.
+       - This section should summarize the most impactful trends and developments that are shaping the {topic} landscape.
+    2. **Key Trends and Innovations**: 
+       - A detailed analysis of the 5 most significant trends and innovations in {topic} for 2024.
+       - Each trend should be described with supporting data, explanations, and its potential impact on the industry.
+    3. **Opportunities and Risks**: 
+       - A concise breakdown of 3 key opportunities and 3 potential risks that stakeholders in {topic} should be aware of in 2024.
+       - Each point should be actionable and explain its relevance to decision-making.
+    4. **Conclusion**: 
+       - Summarize the overall findings, with a focus on the strategic implications for the next 12 months.
+       - Offer recommendations for stakeholders to capitalize on trends and mitigate risks.
+    5. **References**:
+       - Provide a list of all the credible, high-authority sources used in the research, ensuring all sources are no older than 12 months.
+  constraints:
+    - Ensure all findings are recent (no older than 12 months).
+    - Sources must be from reputable and high-authority domains (industry leaders, government reports, well-known publications).
+    - The report must be concise but comprehensive, focusing on actionable insights and decision-making relevance.
+  output_format: >
+    A formal research report structured in markdown format, covering all the major trends and innovations in {topic} for 2024.
+    Each section should be clearly labeled and include citations or references to the sources used.
+  agent: market_researcher
+
+
+writing_task:
+  description: >
+    Write a comprehensive industry-standard report on {topic} focusing on key trends, innovations, risks, and opportunities for 2024. The report should integrate high-quality research and provide stakeholders with actionable insights to make informed decisions.
+  expected_output: >
+    A detailed industry report containing the following sections:
+    1. **Executive Summary**: 
+       - A high-level overview of the most critical findings and insights related to {topic}.
+       - Focus on the top trends and developments that will shape the industry in 2024.
+    2. **Key Trends and Innovations**: 
+       - Analyze the top 5 trends and innovations in {topic} that are expected to have the greatest impact in 2024.
+       - Each trend should include supporting data, expert opinions, and analysis of its potential impact.
+    3. **Opportunities and Risks**: 
+       - Present 3 major opportunities and 3 risks that are relevant to businesses or stakeholders in {topic}.
+       - Each point should include actionable advice or strategies to leverage opportunities and mitigate risks.
+    4. **Industry Forecast for 2024**: 
+       - Provide a forward-looking analysis of the {topic} industry based on current trends, including predictions for growth, challenges, and emerging opportunities.
+    5. **Conclusion and Recommendations**: 
+       - Summarize the key findings and offer specific recommendations for industry leaders and stakeholders to capitalize on trends and mitigate risks in 2024.
+    6. **References and Data Sources**:
+       - Include a complete list of references to all sources, ensuring credibility and authority (e.g., industry reports, white papers, government publications).
+       - Ensure all sources are no older than 12 months.
+  constraints:
+    - Use only authoritative, recent sources for data (e.g., no older than 12 months).
+    - Ensure that all insights are actionable and relevant to decision-makers.
+    - Present data in a visually appealing and clear format, using tables, charts, or graphs where necessary to illustrate key points.
+  output_format: >
+    The report should be structured in PDF format, with clear sections, visuals, and proper citations for references.
+    - Ensure the report adheres to industry-standard formatting (e.g., consistent fonts, margins, headers).
+    - Include any relevant images or charts that support the analysis (e.g., generated through research or external tools).
+    - The report should be concise yet comprehensive, ideally between 15-20 pages, with a focus on readability and professional presentation.
+  agent: research_writer
